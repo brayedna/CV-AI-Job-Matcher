@@ -28,14 +28,22 @@
 
 ### 📊 Dashboard de résultats
 
-**Dashboard**  
-[<img src="https://i.ibb.co/kr8t3jx/search-ai.png" alt="Dashboard" width="900">](https://i.ibb.co/kr8t3jx/search-ai.png)
 
-**Analyse IA du CV**  
-[<img src="https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png" alt="Analyse IA du CV" width="900">](https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png)
+<p><em>Dashboard</em></p>
+<p align="center">
+  <img src="https://i.ibb.co/kr8t3jx/search-ai.png" alt="Dashboard" width="1000" loading="lazy">
+</p>
 
-**Résultats des offres (exemple)**  
-[<img src="https://i.ibb.co/gbVzpNFK/result-ai.png" alt="Résultats des offres" width="900">](https://i.ibb.co/gbVzpNFK/result-ai.png)
+<p><em>Analyse IA du CV</em></p>
+<p align="center">
+  <img src="https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png" alt="Analyse IA du CV" width="1000" loading="lazy">
+</p>
+
+<p><em>Résultats des offres (exemple)</em></p>
+<p align="center">
+  <img src="https://i.ibb.co/gbVzpNFK/result-ai.png" alt="Résultats des offres" width="1000" loading="lazy">
+</p>
+
 
 
 ## 🏗️ Architecture du système
