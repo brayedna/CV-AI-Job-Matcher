@@ -28,7 +28,8 @@
 
 ### 📊 Dashboard de résultats
 *Analyse IA du CV*
-[![miniature](https://ibb.co/kg8Pd7Ch](https://ibb.co/kg8Pd7Ch)
+<img src="https://ibb.co/kg8Pd7Ch" alt="Analyse IA du CV" width="480">
+
 *Visualisation des offres d'emploi triées par score de correspondance*
 
 ### 🔍 Détails du matching
