@@ -29,8 +29,7 @@
 ### 📊 Dashboard de résultats
 *Analyse IA du CV*
 <p align="center">
-  <img src="https://i.ibb.co/JR7Sh1Jz/screencapture-127-0-0-1-3004-2025-09-21-19-48-53-Modifie.png"
-       alt="Capture d’écran du dashboard" width="900" loading="lazy">
+  <img src="https://i.ibb.co/.../screen-1920.png" alt="Capture" width="900" loading="lazy">
 </p>
 
 ### 🔍 Détails du matching
