@@ -27,12 +27,15 @@
 *Interface moderne avec zone de drag & drop pour l'upload de CV*
 
 ### 📊 Dashboard de résultats
-*Dashboard*
-<a href="https://ibb.co/xcjNmWD"><img src="https://i.ibb.co/kr8t3jx/search-ai.png" alt="search-ai" border="0"></a>
-*Analyse IA du CV*
-<a href="https://ibb.co/273B0GHX"><img src="https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png" alt="3161cefd-6568-4dd4-b7e1-4798b13b0a12" border="0"></a>
-*Resultats des offres exemple*
-<img src="https://i.ibb.co/gbVzpNFK/result-ai.png" alt="result-ai" border="0">
+
+**Dashboard**  
+![Dashboard](https://i.ibb.co/kr8t3jx/search-ai.png)
+
+**Analyse IA du CV**  
+![Analyse IA du CV](https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png)
+
+**Résultats des offres (exemple)**  
+![Résultats des offres](https://i.ibb.co/gbVzpNFK/result-ai.png)
 
 ### 🔍 Détails du matching
 *Analyse détaillée des scores de correspondance par critère*
