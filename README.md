@@ -29,16 +29,14 @@
 ### 📊 Dashboard de résultats
 
 **Dashboard**  
-![Dashboard](https://i.ibb.co/kr8t3jx/search-ai.png)
+[<img src="https://i.ibb.co/kr8t3jx/search-ai.png" alt="Dashboard" width="900">](https://i.ibb.co/kr8t3jx/search-ai.png)
 
 **Analyse IA du CV**  
-![Analyse IA du CV](https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png)
+[<img src="https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png" alt="Analyse IA du CV" width="900">](https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png)
 
 **Résultats des offres (exemple)**  
-![Résultats des offres](https://i.ibb.co/gbVzpNFK/result-ai.png)
+[<img src="https://i.ibb.co/gbVzpNFK/result-ai.png" alt="Résultats des offres" width="900">](https://i.ibb.co/gbVzpNFK/result-ai.png)
 
-### 🔍 Détails du matching
-*Analyse détaillée des scores de correspondance par critère*
 
 ## 🏗️ Architecture du système
 
