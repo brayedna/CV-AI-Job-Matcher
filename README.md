@@ -40,30 +40,30 @@
 
 ```mermaid
 graph TB
-    A[👤 Utilisateur] --> B[🌐 Interface Web]
-    B --> C[⚡ Flask Backend]
-    C --> D[📄 Extraction PDF/DOC]
-    C --> E[🧠 AWS Bedrock IA]
-    C --> F[🔍 API Emplois Externe]
-    C --> G[💾 AWS S3 Storage]
+    A[ Utilisateur] --> B[ Interface Web]
+    B --> C[Flask Backend]
+    C --> D[Extraction PDF/DOC]
+    C --> E[AWS Bedrock IA]
+    C --> F[API Emplois Externe]
+    C --> G[AWS S3 Storage]
     
     subgraph "Frontend"
-        B1[📱 HTML/CSS/JS]
-        B2[🎨 Interface Drag & Drop]
-        B3[📊 Dashboard Visualisation]
+        B1[HTML/CSS/JS]
+        B2[Interface Drag & Drop]
+        B3[Dashboard Visualisation]
     end
     
     subgraph "Backend Processing"
-        C1[📄 PyPDF2/DOCX]
-        C2[🧠 Claude 3 Haiku]
-        C3[⚡ Pré-filtrage intelligent]
-        C4[📊 Calcul scores matching]
+        C1[PyPDF2/DOCX]
+        C2[Claude 3 Haiku]
+        C3[Pré-filtrage intelligent]
+        C4[Calcul scores matching]
     end
     
     subgraph "External Services"
-        E1[🤖 AWS Bedrock]
-        F1[🔍 API Jobs Search]
-        G1[☁️ AWS S3]
+        E1[AWS Bedrock]
+        F1[API Jobs Search]
+        G1[AWS S3]
     end
     
     B --> B1
