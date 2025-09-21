@@ -27,6 +27,8 @@
 *Interface moderne avec zone de drag & drop pour l'upload de CV*
 
 ### 📊 Dashboard de résultats
+*Analyse IA du CV*
+![Texte alternatif]((https://ibb.co/kg8Pd7Ch))
 *Visualisation des offres d'emploi triées par score de correspondance*
 
 ### 🔍 Détails du matching
