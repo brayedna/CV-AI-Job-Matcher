@@ -28,8 +28,7 @@
 
 ### 📊 Dashboard de résultats
 *Analyse IA du CV*
-<img src="https://i.ibb.co/JR7Sh1Jz/screencapture-127-0-0-1-3004-2025-09-21-19-48-53-Modifie.png" alt="Analyse IA du CV" border="0">
-
+<img src="https://i.ibb.co/JR7Sh1Jz/screencapture-127-0-0-1-3004-2025-09-21-19-48-53-Modifie.png" alt="screencapture-127-0-0-1-3004-2025-09-21-19-48-53-Modifie" border="0">
 *Visualisation des offres d'emploi triées par score de correspondance*
 
 ### 🔍 Détails du matching
