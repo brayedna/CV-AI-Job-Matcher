@@ -32,7 +32,7 @@
 *Analyse IA du CV*
 <a href="https://ibb.co/273B0GHX"><img src="https://i.ibb.co/wNh1Z5jD/3161cefd-6568-4dd4-b7e1-4798b13b0a12.png" alt="3161cefd-6568-4dd4-b7e1-4798b13b0a12" border="0"></a>
 *Resultats des offres exemple*
-<a href="https://ibb.co/NgSZP5nB"><img src="https://i.ibb.co/gbVzpNFK/result-ai.png" alt="result-ai" border="0"></a>
+<img src="https://i.ibb.co/gbVzpNFK/result-ai.png" alt="result-ai" border="0">
 
 ### 🔍 Détails du matching
 *Analyse détaillée des scores de correspondance par critère*
