@@ -2,11 +2,14 @@
 
 > **Système intelligent de matching CV-Offres d'emploi avec IA**
 
-[![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)](https://python.org)
-[![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)](https://flask.palletsprojects.com)
-[![AWS](https://img.shields.io/badge/AWS-Bedrock-orange.svg)](https://aws.amazon.com/bedrock)
-[![AI](https://img.shields.io/badge/AI-Claude%203%20Haiku-purple.svg)](https://aws.amazon.com/bedrock)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-15.5-black.svg?logo=next.js)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19-blue.svg?logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg?logo=typescript)](https://www.typescriptlang.org)
+[![Python](https://img.shields.io/badge/Python-3.13+-blue.svg?logo=python)](https://python.org)
+[![OpenRouter](https://img.shields.io/badge/OpenRouter-API-purple.svg)](https://openrouter.ai)
+[![AI](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-orange.svg?logo=google)](https://ai.google.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8.svg?logo=tailwind-css)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 
 ## 🎯 Vue d'ensemble
 
