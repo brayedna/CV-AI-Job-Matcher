@@ -29,14 +29,19 @@
 ### 📊 Dashboard de résultats
 
 **Dashboard**  
-![Dashboard](images/search_ai.png)
+![Dashboard](images/accueil.png)
 
 **Analyse IA du CV**  
-![Analyse IA du CV](images/analyzer_ai.png)
+![Analyse IA du CV](images/analyze_cv.png)
+
+**Upload**  
+![Upload du CV](images/upload_cv.png)
 
 **Résultats des offres (exemple)**  
-![Résultats des offres](images/result_ai.png)
+![Résultats des offres](images/job_offer.png)
 
+**Lettre de motivation (exemple)**  
+![Lettre de motivation](images/gene_lm.png)
 
 ## 🏗️ Architecture du système
 
