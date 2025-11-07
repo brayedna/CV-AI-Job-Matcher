@@ -10,16 +10,24 @@
 
 ## 🎯 Vue d'ensemble
 
-**CV AI JOB MATCHER** est une application web intelligente qui automatise le processus de matching entre CV et offres d'emploi. Le système utilise l'intelligence artificielle (AWS Bedrock Claude 3 Haiku) pour analyser les CV et calculer des scores de correspondance précis avec les offres d'emploi.
+# 🎯 Jobia - Plateforme Intelligente de Matching Emploi
 
-### ✨ Fonctionnalités principales
+> Assistant IA pour la recherche d'emploi, l'analyse de CV et la génération de lettres de motivation personnalisées
 
-- 📄 **Upload de CV** : Support PDF, DOC, DOCX avec extraction automatique du texte
-- 🧠 **Analyse IA** : Analyse complète du CV avec AWS Bedrock (Claude 3 Haiku)
-- 🔍 **Recherche d'emplois** : Intégration avec API externe de recherche d'emplois
-- ⚡ **Matching intelligent** : Calcul de scores de correspondance avec règles déterministes
-- 📊 **Dashboard** : Visualisation des statistiques et résultats
-- 🎨 **Interface moderne** : Design responsive avec drag & drop
+Jobia (JobIA) est une plateforme complète qui utilise l'intelligence artificielle pour analyser les CV, matcher les candidats avec les offres d'emploi les plus pertinentes et générer des lettres de motivation personnalisées.
+
+---
+
+## ✨ Fonctionnalités principales
+
+- **📄 Analyse de CV intelligente** : Extraction et structuration automatique des compétences, expériences et formations
+- **🎯 Matching emploi optimisé** : Scoring intelligent de compatibilité CV/offre d'emploi
+- **📝 Génération de lettres de motivation** : Création automatique de lettres personnalisées au format DOCX
+- **🔍 Recherche d'offres multi-sources** : Agrégation d'offres depuis plusieurs plateformes d'emploi
+- **🌍 Interface multilingue** : Support de plusieurs langues pour une audience internationale
+- **📊 Dashboard interactif** : Visualisation des résultats de matching avec scores détaillés
+
+---
 
 ## 📸 Captures d'écran
 
@@ -47,97 +55,215 @@
 
 ```mermaid
 graph TB
-    A[ Utilisateur] --> B[ Interface Web]
-    B --> C[Flask Backend]
-    C --> D[Extraction PDF/DOC]
-    C --> E[AWS Bedrock IA]
-    C --> F[API Emplois Externe]
-    C --> G[AWS S3 Storage]
-    
-    subgraph "Frontend"
-        B1[HTML/CSS/JS]
+    A[👤 Utilisateur] --> B[🌐 Interface Web Next.js]
+    B --> C[⚙️ API Routes Next.js]
+    C --> D[🐍 Scripts Python Backend]
+    D --> E[📄 Extraction PDF]
+    D --> F[🤖 OpenRouter IA]
+    D --> G[💼 API Emplois]
+
+    subgraph "Frontend - Next.js 15"
+        B1[React 19 + TypeScript]
         B2[Interface Drag & Drop]
         B3[Dashboard Visualisation]
+        B4[Tailwind CSS]
     end
-    
-    subgraph "Backend Processing"
-        C1[PyPDF2/DOCX]
-        C2[Claude 3 Haiku]
-        C3[Pré-filtrage intelligent]
-        C4[Calcul scores matching]
+
+    subgraph "Backend Processing - Python"
+        D1[PyPDF2/PyMuPDF]
+        D2[Analyse IA Claude/Gemini]
+        D3[Matching Parallèle]
+        D4[Génération DOCX]
     end
-    
-    subgraph "External Services"
-        E1[AWS Bedrock]
-        F1[API Jobs Search]
-        G1[AWS S3]
+
+    subgraph "Services Externes"
+        F1[OpenRouter API]
+        G1[HelloWork API]
+        G2[Scraping Multi-sources]
     end
-    
+
     B --> B1
     B --> B2
     B --> B3
-    
-    C --> C1
-    C --> C2
-    C --> C3
-    C --> C4
-    
-    E --> E1
+    B --> B4
+
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+
     F --> F1
     G --> G1
+    G --> G2
 ```
+
+---
 
 ## 🚀 Technologies utilisées
 
-### Backend
-- **Python 3.13+** : Langage principal
-- **Flask** : Framework web
-- **AWS Bedrock** : Service IA (Claude 3 Haiku)
-- **AWS S3** : Stockage des fichiers
-- **PyPDF2** : Extraction PDF
-- **python-docx** : Extraction DOC/DOCX
-
 ### Frontend
-- **HTML5/CSS3** : Structure et style
-- **JavaScript ES6+** : Interactivité
-- **Responsive Design** : Compatible mobile/desktop
+- **Next.js 15.5** : Framework React avec App Router
+- **React 19** : Bibliothèque UI moderne
+- **TypeScript 5** : Typage statique pour la fiabilité
+- **Tailwind CSS 4** : Framework CSS utility-first
+- **Prisma** : ORM pour PostgreSQL
+- **NextAuth.js** : Authentification complète
+- **Supabase** : Base de données PostgreSQL hébergée
 
-### Infrastructure
-- **AWS** : Cloud services
-- **REST API** : Communication
-- **JSON** : Format de données
+### Backend
+- **Python 3.13+** : Langage principal pour le traitement IA
+- **OpenRouter API** : Accès aux modèles IA (Google Gemini 2.5 Flash Lite)
+- **PyPDF2 + PyMuPDF** : Extraction de texte depuis PDF avec OCR
+- **python-docx** : Génération de documents Word
+- **ThreadPoolExecutor** : Traitement parallèle des matchings
+- **Flask** : Framework web léger pour les API
 
-## 🧠 Algorithmes de matching
+### Sources de données
+- **HelloWork API** : Offres d'emploi françaises
+- **Scraping multi-plateformes** : Agrégation de données depuis LinkedIn, Welcome to the Jungle, Indeed
+- **Token bucket rate limiting** : Gestion des quotas API
 
-### **Analyse de CV avec IA**
-**Modèle utilisé** : Claude 3 Haiku (AWS Bedrock)
-- Extraction automatique : nom, expérience, compétences, formations
-- Structuration des données en JSON
-- Détection du niveau d'expérience et domaines d'expertise
+---
 
-### **Calcul de scores de matching**
-**Formule déterministe** :
+## 🧠 Intelligence Artificielle
+
+### Modèle utilisé
+**Google Gemini 2.5 Flash Lite** via OpenRouter API
+- Rapide et économique
+- Excellente compréhension du contexte
+- Structuration précise des données
+
+### Analyse de CV
+- **Extraction automatique** : Nom, email, téléphone, réseaux sociaux
+- **Compétences techniques** : Technologies, langages, frameworks
+- **Compétences business** : Soft skills, domaines d'expertise
+- **Expériences** : Postes, entreprises, durées, responsabilités
+- **Formations** : Diplômes, certifications, établissements
+- **Langues** : Niveaux et certifications
+
+### Algorithme de matching
+**Formule de scoring** :
 ```
-Score = (Domain × 0.30) + (Experience × 0.25) + (Skills × 0.35) + (Education × 0.10) - Pénalités
+Score = (Domaine × 0.30) + (Expérience × 0.25) + (Compétences × 0.35) + (Formation × 0.10)
 ```
 
-**Règles de capping** :
-- Domaines incompatibles : Score max 10%
-- Junior → Senior Expert : Score max 15%
-- Rôles inappropriés : Score max 20%
+**Règles de validation** :
+- Domaines incompatibles : Score plafonné
+- Niveau d'expérience inadapté : Pénalités appliquées
+- Compétences techniques manquantes : Impact sur le score
 
-### **Pré-filtrage intelligent**
-- **95% des offres éliminées** en 0.01s chacune
-- **5% nécessitent une analyse IA** complète
-- Élimination des doublons et offres incompatibles
+---
 
 ## ⚡ Performance
 
-- ⚡ **Analyse CV** : ~2-3 secondes
-- 🔍 **Matching 25 offres** : ~20 secondes
-- 📊 **Pré-filtrage intelligent** : 95% des offres éliminées
-- 🎯 **Précision matching** : Scores déterministes avec validation
-- 📈 **Scalabilité** : 1000 offres en 4.6 minutes (vs 91 minutes)
+### Temps de traitement
+- ⚡ **Analyse CV** : 2-3 secondes
+- 🔍 **Matching 50 offres** : ~30 secondes (traitement parallèle)
+- 📄 **Génération lettre** : 5-7 secondes
+- 🎯 **Recherche offres** : 1-2 secondes
+
+### Optimisations
+- **Traitement parallèle** : 2 workers simultanés pour le matching
+- **Rate limiting intelligent** : Token bucket pour respecter les quotas API
+- **Cache résultats** : Évite les recalculs inutiles
+- **OCR fallback** : Si l'extraction PDF échoue, OCR avec PyMuPDF
+
+---
+
+## 📊 Flux de données
+
+### 1. Upload et analyse de CV
+```mermaid
+sequenceDiagram
+    participant U as Utilisateur
+    participant F as Next.js Frontend
+    participant A as API Route
+    participant P as Python Script
+    participant AI as OpenRouter IA
+
+    U->>F: Upload CV (PDF)
+    F->>A: POST /api/upload-cv
+    A->>A: Sauvegarde dans server/uploads/
+    A-->>F: Success
+    F->>A: POST /api/analyze-cv
+    A->>P: Spawn cv_analyzer.py
+    P->>P: Extraction texte (PyPDF2)
+    P->>AI: Analyse IA
+    AI-->>P: CV structuré JSON
+    P-->>A: Résultat analyse
+    A-->>F: Données CV
+    F-->>U: Affichage dashboard
+```
+
+### 2. Recherche et matching d'emplois
+```mermaid
+sequenceDiagram
+    participant U as Utilisateur
+    participant F as Frontend
+    participant A as API Route
+    participant S as job_search_api.py
+    participant M as cv_matcher.py
+    participant AI as OpenRouter IA
+    participant H as HelloWork API
+
+    U->>F: Recherche emplois
+    F->>A: POST /api/search-and-match
+    A->>S: Spawn job_search_api.py
+    S->>H: Requête offres
+    H-->>S: Liste offres JSON
+    S-->>A: Offres brutes
+    A->>M: Spawn cv_matcher_with_analysis.py
+    M->>M: Traitement parallèle (2 workers)
+    loop Pour chaque offre
+        M->>AI: Analyse compatibilité
+        AI-->>M: Score + détails
+    end
+    M-->>A: Résultats triés
+    A-->>F: Top offres matchées
+    F-->>U: Affichage avec scores
+```
+---
+
+## 📁 Structure du projet
+
+```
+rework_jobia/
+├── view/                           # Frontend Next.js
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── page.tsx           # Page d'accueil
+│   │   │   ├── match/             # Page de matching
+│   │   │   └── api/               # API Routes
+│   │   │       ├── upload-cv/
+│   │   │       ├── analyze-cv/
+│   │   │       ├── search-jobs/
+│   │   │       ├── match-cv/
+│   │   │       └── generate-motivation-letter/
+│   │   ├── components/
+│   │   │   ├── CVMatcher.tsx      # Composant principal
+│   │   │   └── Header.tsx
+│   │   └── contexts/
+│   │       └── LanguageContext.tsx
+│   ├── prisma/
+│   │   └── schema.prisma          # Schéma BDD
+│   ├── package.json
+│   └── next.config.ts
+│
+├── server/                         # Backend Python
+│   ├── cv_analyzer.py             # Analyse IA de CV (1441 lignes)
+│   ├── job_search_api.py          # Recherche offres HelloWork (397 lignes)
+│   ├── cv_matcher_with_analysis.py # Matching parallèle (761 lignes)
+│   ├── generate_motivation_letter.py # Génération DOCX (435 lignes)
+│   ├── logger_config.py           # Système de logs
+│   ├── config.json                # Configuration
+│   ├── requirements.txt
+│   ├── uploads/                   # CV uploadés
+│   └── temp/                      # Fichiers temporaires
+│
+└── README.md
+```
+
+---
 
 ## 🛠️ Compétences techniques 
 
@@ -219,13 +345,25 @@ sequenceDiagram
     F-->>U: Affichage résultats
 ```
 
-## 🎯 Cas d'usage professionnels
+---
 
-### **Pour les entreprises**
-- **RH** : Automatisation du pré-screening des CV
-- **Recruteurs** : Analyse rapide de la pertinence des candidats
-- **Formations** : Outil pédagogique pour l'orientation
-- **Consultants** : Matching intelligent pour les missions
+## 🎯 Cas d'usage
+
+### Pour les candidats
+- **Recherche ciblée** : Trouver les offres les plus pertinentes
+- **Gain de temps** : Analyse automatique de dizaines d'offres
+- **Candidatures optimisées** : Lettres personnalisées pour chaque poste
+
+### Pour les recruteurs
+- **Pré-screening** : Filtrage automatique des CV
+- **Matching inversé** : Trouver les candidats pour une offre
+- **Analyse de marché** : Comprendre les profils disponibles
+
+### Pour les organismes de formation
+- **Orientation** : Identifier les compétences à développer
+- **Employabilité** : Mesurer l'adéquation profil/marché
+
+---
 
 
 ## 🚀 Potentiel d'évolution
@@ -245,11 +383,11 @@ sequenceDiagram
 ### **Paramètres IA**
 ```json
 {
-  "bedrock": {
-    "model_id": "anthropic.claude-3-haiku-20240307-v1:0",
-    "max_tokens": 3000,
-    "temperature": 0.1,
-    "top_p": 0.2
+  "openrouter": {
+    "model": "google/gemini-2.5-flash-lite",  // Modèle IA
+    "max_tokens": 2000,                        // Tokens max par réponse
+    "temperature": 0.1,                        // Créativité (0.0-1.0)
+    "top_p": 0.1                               // Nucleus sampling
   }
 }
 ```
@@ -258,29 +396,26 @@ sequenceDiagram
 ```json
 {
   "matching": {
-    "use_llm_matching": true,
-    "max_jobs_to_analyze": 25,
-    "parallel_processing": true,
-    "max_parallel_workers": 3,
-    "api_delay_seconds": 0.5,
-    "retry_attempts": 3
+    "max_jobs_to_analyze": 50,        // Nombre max d'offres à analyser
+    "max_parallel_workers": 2,         // Workers parallèles (2-4 recommandé)
+    "use_llm_matching": true,          // Utiliser l'IA pour le matching
+    "api_delay_seconds": 0.5,          // Délai entre requêtes API
+    "retry_attempts": 3                // Tentatives en cas d'erreur
   }
 }
 ```
 
-## 📈 Métriques de performance
+## 📈 Métriques et statistiques
 
-### **Temps de traitement**
-- ⚡ **Analyse CV** : 2-3 secondes
-- 🔍 **Matching 25 offres** : 20 secondes
-- 📊 **Pré-filtrage** : 0.01s par offre
-- 🎯 **Total optimisé** : 95% plus rapide qu'une approche naïve
+### Performance du matching
+- **Temps moyen** : ~0.6s par offre analysée
+- **Précision** : Scores déterministes et reproductibles
+- **Scalabilité** : Traitement parallèle jusqu'à 4 workers
 
-### **Précision du matching**
-- 🎯 **Scores déterministes** : Reproductibles et cohérents
-- 🔒 **Règles de capping** : Domaines incompatibles = max 10%
-- 📈 **Sous-scores détaillés** : Compétences, expérience, formation
-- ✅ **Validation post-IA** : Vérification des résultats
+### Qualité de l'analyse CV
+- **Taux d'extraction** : >95% des informations structurées
+- **Détection compétences** : Identification de 30+ compétences techniques
+- **OCR fallback** : Support des PDF scannés
 
 ## 🎯 Points forts techniques
 
@@ -307,5 +442,15 @@ sequenceDiagram
 - **Scoring déterministe** : Règles explicites et reproductibles
 - **Pré-filtrage** : Élimination intelligente des offres incompatibles
 - **Interface moderne** : Drag & drop et design responsive
+
+---
+
+## 🛡️ Sécurité et confidentialité
+
+- **Données sensibles** : Configuration via variables d'environnement
+- **Upload sécurisé** : Validation des types de fichiers (PDF uniquement)
+- **Stockage temporaire** : CV supprimés après traitement (optionnel)
+- **API privées** : Routes protégées côté serveur
+- **Rate limiting** : Protection contre les abus
 
 *Développé avec ❤️ en Python et AWS*
