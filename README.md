@@ -1,4 +1,4 @@
-# 🤖 CV AI JOB MATCHER
+# CV AI JOB MATCHER
 
 > **Système intelligent de matching CV-Offres d'emploi avec IA**
 
@@ -11,9 +11,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8.svg?logo=tailwind-css)](https://tailwindcss.com)
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 
-## 🎯 Vue d'ensemble
+## Vue d'ensemble
 
-# 🎯 Jobia - Plateforme Intelligente de Matching Emploi
+# Jobia - Plateforme Intelligente de Matching Emploi
 
 > Assistant IA pour la recherche d'emploi, l'analyse de CV et la génération de lettres de motivation personnalisées
 
@@ -21,23 +21,23 @@ Jobia (JobIA) est une plateforme complète qui utilise l'intelligence artificiel
 
 ---
 
-## ✨ Fonctionnalités principales
+## Fonctionnalités principales
 
-- **📄 Analyse de CV intelligente** : Extraction et structuration automatique des compétences, expériences et formations
-- **🎯 Matching emploi optimisé** : Scoring intelligent de compatibilité CV/offre d'emploi
-- **📝 Génération de lettres de motivation** : Création automatique de lettres personnalisées au format DOCX
-- **🔍 Recherche d'offres multi-sources** : Agrégation d'offres depuis plusieurs plateformes d'emploi
-- **🌍 Interface multilingue** : Support de plusieurs langues pour une audience internationale
-- **📊 Dashboard interactif** : Visualisation des résultats de matching avec scores détaillés
+- **Analyse de CV intelligente** : Extraction et structuration automatique des compétences, expériences et formations
+- **Matching emploi optimisé** : Scoring intelligent de compatibilité CV/offre d'emploi
+- **Génération de lettres de motivation** : Création automatique de lettres personnalisées au format DOCX
+- **Recherche d'offres multi-sources** : Agrégation d'offres depuis plusieurs plateformes d'emploi
+- **Interface multilingue** : Support de plusieurs langues pour une audience internationale
+- **Dashboard interactif** : Visualisation des résultats de matching avec scores détaillés
 
 ---
 
-## 📸 Captures d'écran
+## Captures d'écran
 
-### 🏠 Page d'accueil
+### Page d'accueil
 *Interface moderne avec zone de drag & drop pour l'upload de CV*
 
-### 📊 Dashboard de résultats
+### Dashboard de résultats
 
 **Dashboard**  
 ![Dashboard](images/accueil.png)
@@ -54,16 +54,16 @@ Jobia (JobIA) est une plateforme complète qui utilise l'intelligence artificiel
 **Lettre de motivation (exemple)**  
 ![Lettre de motivation](images/gene_lm.png)
 
-## 🏗️ Architecture du système
+## Architecture du système
 
 ```mermaid
 graph TB
-    A[👤 Utilisateur] --> B[🌐 Interface Web Next.js]
-    B --> C[⚙️ API Routes Next.js]
-    C --> D[🐍 Scripts Python Backend]
-    D --> E[📄 Extraction PDF]
-    D --> F[🤖 OpenRouter IA]
-    D --> G[💼 API Emplois]
+    A[Utilisateur] --> B[Interface Web Next.js]
+    B --> C[API Routes Next.js]
+    C --> D[Scripts Python Backend]
+    D --> E[Extraction PDF]
+    D --> F[OpenRouter IA]
+    D --> G[API Emplois]
 
     subgraph "Frontend - Next.js 15"
         B1[React 19 + TypeScript]
@@ -102,7 +102,7 @@ graph TB
 
 ---
 
-## 🚀 Technologies utilisées
+## Technologies utilisées
 
 ### Frontend
 - **Next.js 15.5** : Framework React avec App Router
@@ -128,7 +128,7 @@ graph TB
 
 ---
 
-## 🧠 Intelligence Artificielle
+## Intelligence Artificielle
 
 ### Modèle utilisé
 **Google Gemini 2.5 Flash Lite** via OpenRouter API
@@ -157,13 +157,13 @@ Score = (Domaine × 0.30) + (Expérience × 0.25) + (Compétences × 0.35) + (Fo
 
 ---
 
-## ⚡ Performance
+## Performance
 
 ### Temps de traitement
-- ⚡ **Analyse CV** : 2-3 secondes
-- 🔍 **Matching 50 offres** : ~30 secondes (traitement parallèle)
-- 📄 **Génération lettre** : 5-7 secondes
-- 🎯 **Recherche offres** : 1-2 secondes
+- **Analyse CV** : 2-3 secondes
+- **Matching 50 offres** : ~30 secondes (traitement parallèle)
+- **Génération lettre** : 5-7 secondes
+- **Recherche offres** : 1-2 secondes
 
 ### Optimisations
 - **Traitement parallèle** : 2 workers simultanés pour le matching
@@ -173,7 +173,7 @@ Score = (Domaine × 0.30) + (Expérience × 0.25) + (Compétences × 0.35) + (Fo
 
 ---
 
-## 📊 Flux de données
+## Flux de données
 
 ### 1. Upload et analyse de CV
 ```mermaid
@@ -227,7 +227,7 @@ sequenceDiagram
 ```
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 rework_jobia/
@@ -268,37 +268,37 @@ rework_jobia/
 
 ---
 
-## 🛠️ Compétences techniques 
+## Compétences techniques 
 
 ### **Développement Backend**
-- ✅ **Python 3.13+** : Langage principal avec bonnes pratiques
-- ✅ **Flask** : Framework web avec architecture REST
-- ✅ **APIs REST** : Conception et implémentation d'endpoints
-- ✅ **Gestion des fichiers** : Upload, validation, traitement PDF/DOC/DOCX
-- ✅ **Sessions** : Gestion d'état utilisateur avec Flask sessions
+- **Python 3.13+** : Langage principal avec bonnes pratiques
+- **Flask** : Framework web avec architecture REST
+- **APIs REST** : Conception et implémentation d'endpoints
+- **Gestion des fichiers** : Upload, validation, traitement PDF/DOC/DOCX
+- **Sessions** : Gestion d'état utilisateur avec Flask sessions
 
 ### **Intelligence Artificielle & Machine Learning**
-- ✅ **AWS Bedrock** : Intégration avec Claude 3 Haiku
-- ✅ **Prompt Engineering** : Conception de prompts optimisés
-- ✅ **Traitement du langage naturel** : Extraction et analyse de texte
-- ✅ **Algorithmes de matching** : Scoring intelligent et déterministe
-- ✅ **Optimisation IA** : Pré-filtrage et cache intelligent
+- **AWS Bedrock** : Intégration avec Claude 3 Haiku
+- **Prompt Engineering** : Conception de prompts optimisés
+- **Traitement du langage naturel** : Extraction et analyse de texte
+- **Algorithmes de matching** : Scoring intelligent et déterministe
+- **Optimisation IA** : Pré-filtrage et cache intelligent
 
 ### **Architecture Cloud & DevOps**
-- ✅ **AWS S3** : Stockage et gestion des fichiers
-- ✅ **AWS Bedrock** : Service IA managé
-- ✅ **Configuration** : Gestion des environnements et secrets
-- ✅ **Monitoring** : Logs détaillés et métriques de performance
-- ✅ **Scalabilité** : Architecture modulaire et extensible
+- **AWS S3** : Stockage et gestion des fichiers
+- **AWS Bedrock** : Service IA managé
+- **Configuration** : Gestion des environnements et secrets
+- **Monitoring** : Logs détaillés et métriques de performance
+- **Scalabilité** : Architecture modulaire et extensible
 
 ### **Développement Frontend**
-- ✅ **HTML5/CSS3** : Interface responsive et moderne
-- ✅ **JavaScript ES6+** : Interactivité et gestion des événements
-- ✅ **Drag & Drop** : Interface utilisateur intuitive
-- ✅ **AJAX** : Communication asynchrone avec le backend
-- ✅ **UX/UI** : Design professionnel et expérience utilisateur
+- **HTML5/CSS3** : Interface responsive et moderne
+- **JavaScript ES6+** : Interactivité et gestion des événements
+- **Drag & Drop** : Interface utilisateur intuitive
+- **AJAX** : Communication asynchrone avec le backend
+- **UX/UI** : Design professionnel et expérience utilisateur
 
-## 📊 Flux de données
+## Flux de données
 
 ### 1. Upload et analyse de CV
 ```mermaid
@@ -350,7 +350,7 @@ sequenceDiagram
 
 ---
 
-## 🎯 Cas d'usage
+## Cas d'usage
 
 ### Pour les candidats
 - **Recherche ciblée** : Trouver les offres les plus pertinentes
@@ -369,7 +369,7 @@ sequenceDiagram
 ---
 
 
-## 🚀 Potentiel d'évolution
+## Potentiel d'évolution
 
 ### **Améliorations possibles**
 - **Interface mobile** : Application mobile native
@@ -381,7 +381,7 @@ sequenceDiagram
 - **CI/CD** : Pipeline de déploiement automatisé
 - **Monitoring** : Métriques avancées avec Prometheus
 
-## 🔧 Configuration technique
+## Configuration technique
 
 ### **Paramètres IA**
 ```json
@@ -408,7 +408,7 @@ sequenceDiagram
 }
 ```
 
-## 📈 Métriques et statistiques
+## Métriques et statistiques
 
 ### Performance du matching
 - **Temps moyen** : ~0.6s par offre analysée
@@ -420,7 +420,7 @@ sequenceDiagram
 - **Détection compétences** : Identification de 30+ compétences techniques
 - **OCR fallback** : Support des PDF scannés
 
-## 🎯 Points forts techniques
+## Points forts techniques
 
 ### **1. Architecture solide**
 - **Séparation des responsabilités** : Backend, Frontend, IA séparés
@@ -448,7 +448,7 @@ sequenceDiagram
 
 ---
 
-## 🛡️ Sécurité et confidentialité
+## Sécurité et confidentialité
 
 - **Données sensibles** : Configuration via variables d'environnement
 - **Upload sécurisé** : Validation des types de fichiers (PDF uniquement)
@@ -456,4 +456,4 @@ sequenceDiagram
 - **API privées** : Routes protégées côté serveur
 - **Rate limiting** : Protection contre les abus
 
-*Développé avec ❤️ en Python et AWS*
+*Développé avec passion en Python et AWS*
